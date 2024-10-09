@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%; 
+    height: 100%;
+}
+
+.page1{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.top{
+    width: 100%;
+    height: 70%;
+    background-color: rgba(24, 19, 19, 0.671);
+}
+nav{
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    padding-top: 3rem;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 3rem;
+}
+nav > .name{
+    margin-left: 15rem;
+}
+nav > .items{
+    height: 100%;
+    margin-right: 10rem;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    font-size: 20px;
+}
+nav > .items > a{
+    text-decoration: none;
+    color: white;
+}
+nav > .items > button{
+    font-size: 1rem;
+    padding: 0.8rem 2rem;
+}
+.top > img{
+    width: 300px;
+    position: absolute;
+    top: 150px;
+    right: 250px;
+    rotate: 5deg;
+    box-shadow: 10px 7px 15px black, -1px -1px 20px white;
+}
+
+.leftpage{
+    width: 250px;
+    margin-top: 100px;
+    margin-left: 200px;
+    color: wheat;
+}
+.leftpage > h2{
+    text-decoration: underline;
+}
+.leftpage > p, button{
+    margin-top: 30px;
+}
+.leftpage > button{
+    padding: 10px 20px;
+}
+.bottom{
+    width: 100%;
+    height: 30%;
+    background-color: rgb(159, 202, 202);
+    padding-top: 1px;
+}
+.bottom > p {
+    width: 40%;
+    margin-top: 3%;
+    margin-left: 80px;
+    text-align: center;
+}

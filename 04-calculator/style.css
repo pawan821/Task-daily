@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    width: 80%;
+    height: 100%;
+    background-color: rgb(235, 230, 230);
+    margin: auto;
+}
+.upper{
+    width: 100%;
+    height: 50%;
+}
+.upper > .bar{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-left: 10px;
+    font-size: 13px;
+}
+.bar > img{
+    width: 30px;
+    height: 25px;   
+}
+.contant{
+    width: 100%;
+    height:75%;
+}
+.functions{
+    width: 40%;
+    height: 10%;
+    display: flex;
+    gap: 20px;
+    margin-left: 20px;
+}
+.functions > button {
+    width: 20%;
+    border: none;
+    background: transparent;
+}
+.lower{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.lower > button {
+    width: 24%;
+    height: 40px;
+    font-size: 20px;
+
+
+    border-radius: 30px;
+    border: none;
+    box-shadow: 3px 3px 5px black, -4px -4px 5px white ;
+}
+.lower > button:hover{
+    background-color: rgb(202, 201, 201);
+}
+.lower > button:active{
+    box-shadow: 3px 3px 5px black, -4px -4px 5px white ;
+    box-shadow: inset -2px -2px 3px black, inset 2px 2px 3px white ;
+
+}
+.clear > img {
+    width: 35px;
+}
