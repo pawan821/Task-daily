@@ -21,6 +21,7 @@ nav{
     padding: 10px 0;
     border-bottom: 1px solid black;
     background-color: rgb(92, 1, 1);
+    border-bottom: 1px solid white;
 }
 nav .logo img{
     width: 60px;
