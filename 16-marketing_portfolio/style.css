@@ -6,12 +6,11 @@
 }
 html,body{
     width: 100%;
-    height: 100vh;
     padding: 1px;
     background-image: url("./images/travale-bg.webp");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; 
 }
 nav{
     width: 100%;
@@ -20,8 +19,12 @@ nav{
     align-items: center;
     padding: 10px 0;
     border-bottom: 1px solid black;
-    background-color: rgb(92, 1, 1);
+    background-color: rgba(92, 1, 1, 0.151);
+    backdrop-filter: blur(10px);
     border-bottom: 1px solid white;
+    position: fixed;
+    top: 0;
+    z-index: 10;
 }
 nav .logo img{
     width: 60px;
@@ -40,7 +43,8 @@ nav i{
 }
 .page1{
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    padding: 1px;
     background-color: black;
     color: white;
     position: relative;
@@ -48,7 +52,8 @@ nav i{
 .page1 .left{
     width: 50%;
     height: 90%;
-    padding: 160px 40px;
+    padding-top: 200px;
+    padding-left: 100px;
     display: flex;
     gap: 20px;
     flex-direction: column;
@@ -65,8 +70,15 @@ nav i{
 .page1 .left .button{
     background-color: rgb(202, 0, 0);
     color: black;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 13px;
     font-weight: 600;
-    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.page1 .left .button:active{
+    opacity: 0.8;
 }
 .right{
     width: 50%;
@@ -79,6 +91,7 @@ nav i{
     align-items: center;
 }
 .right .inner-div{
+    margin-top: 150px;
     background: linear-gradient(to bottom right , rgba(255, 0, 0, 0.801),rgba(255, 0, 0, 0))
 }
 .right .inner-div img{
@@ -120,9 +133,15 @@ nav i{
 .page2 .right .button{
     background-color: rgb(202, 0, 0);
     color: black;
-    font-weight: 600;
-    padding: 5px 10px;
     margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.page2 .right .button:active{
+    opacity: 0.8;
 }
 .page3{
     width: 100%;
@@ -167,6 +186,9 @@ footer{
     flex-direction: column;
     justify-content: space-between;
 }
+footer hr{
+    margin-top: 20px;
+}
 .uperdiv{
     width: 100%;
     display: flex;
@@ -186,6 +208,7 @@ footer{
     gap: 20px;
 }
 .imgdiv{
+    margin-top: 50px;
     display: flex;
     gap: 20px;
 }
